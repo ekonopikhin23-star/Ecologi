@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екологія: час діяти зараз</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Georgia', 'Times New Roman', serif; 
+            background: #f5f0e1; 
+            padding: 20px; 
+            line-height: 1.7;
+        }
+        .newspaper {
+            max-width: 900px; 
+            margin: 0 auto; 
+            background: white; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            padding: 30px;
+            border: 1px solid #ddd;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px double #2c2c2c;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #1a1a1a;
+            text-transform: uppercase;
+        }
+        .header .subtitle {
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        .article-content {
+            column-count: 2;
+            column-gap: 50px;
+            column-fill: balance;
+            text-align: justify;
+            position: relative;
+            min-height: 500px;
+        }
+        /* Вертикальна лінія між колонками */
+        .article-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            background: #c9c9c9;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .article-content > * {
+            break-inside: avoid;
+            position: relative;
+            z-index: 2;
+        }
+        .article-content p {
+            margin-bottom: 1.2em;
+            text-indent: 2em;
+            font-size: 1rem;
+            color: #2c2c2c;
+        }
+        .article-content p:first-child { text-indent: 0; }
+        .article-content p:first-child::first-letter {
+            float: left;
+            font-size: 3.5rem;
+            line-height: 0.85;
+            padding-right: 8px;
+            color: #2d5a27;
+            font-weight: bold;
+        }
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2d5a27;
+            margin: 1.5em 0 0.5em 0;
+            padding-bottom: 0.3em;
+            border-bottom: 2px solid #2d5a27;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            break-inside: avoid;
+        }
+        .highlight-box {
+            background: #f0f7ed;
+            border-left: 4px solid #2d5a27;
+            padding: 15px 20px;
+            margin: 1.5em 0;
+            font-size: 0.95rem;
+            border-radius: 0 4px 4px 0;
+            break-inside: avoid;
+        }
+        .highlight-box strong { color: #1a3d15; }
+        .quote {
+            text-align: center;
+            font-style: italic;
+            color: #444;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 1.2em 0;
+            margin: 1.5em 0;
+            font-size: 1.1rem;
+            background: #fafafa;
+            break-inside: avoid;
+        }
+        .action-list {
+            margin: 1.5em 0;
+            padding-left: 1.5em;
+            break-inside: avoid;
+        }
+        .action-list li {
+            margin-bottom: 0.6em;
+            padding-left: 0.5em;
+            position: relative;
+        }
+        .action-list li::before {
+            content: '→';
+            color: #2d5a27;
+            font-weight: bold;
+            position: absolute;
+            left: -1.5em;
+        }
+        @media (max-width: 700px) {
+            .article-content { 
+                column-count: 1; 
+                min-height: auto;
+            }
+            .article-content::before { display: none; }
+            .header h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="header">
+            <h1>Екологія: час діяти зараз</h1>
+            <div class="subtitle">Спецстаття: як змінити світ, починаючи з власного дому</div>
+        </div>
+
+        <div class="article-content">
+            <p>Кожного року Україна втрачає тисячі гектарів лісів, а річки перетворюються на стічні колектори. Проблема не в тій, що природа зникає — вона в тій, що ми звикли не помічати цього. Екологія давно перестала бути темою для наукових конференцій. Це про наш щоденний вибір: яка пляшка потрапить у смітник, а яка — у переробку; чи виконаємо ми поїздку на автобусі чи на власному авто.</p>
+
+            <p>За даними Державної екологічної інспекції, лише за 2025 рік фіксується понад 12 тисяч порушень екологічного законодавства. Більшість з них — незаконне сміттєзвалище, несанкціонана вирубка, зкиди речовин у водойми. Але за офіційною статистикою стоїть проста правда: кожне таке порушення — це чейсь вибір «зробити зручно» замість «зробити правильно».</p>
+
+            <div class="highlight-box">
+                <strong>Цікаво знати:</strong> Одне дерево за рік поглинає близько 21 кг CO₂ та видає достатньо кисню для 2-х людей. В Україні на одного населення припадає в 3 рази менше лісової площі, ніж середньо по ЄС.
+            </div>
+
+            <div class="section-title">Що робить держава і громадяни</div>
+
+            <p>Хоча держава приймає закони про сортування сміття, заборону одноразового пластику та розширення природно-заповідного фонду, реальні зміни починаються не в Раді, а на кухні. Сортування відходів, відмова від пакетів, економія води — це не «мода», а гігієна мислення. У літньому таборі «Зелене майбутнє» у Львівській області підлітки за тиждень зібрали 3 тонни пластику, який відправили на переробку у лавочки для парків. Це робили не волонтери з досвідом — просто шкільники, яким показали, як це працює.</p>
+
+            <div class="quote">
+                «Екологія — це не про збереження природи від людини. Це про збереження людини в природі.»
+            </div>
+
+            <div class="section-title">Приклади, що працюють</div>
+
+            <p>Міста починають змінюватися. Київський «Екологічний патруль» за рік виявив понад 400 несанкціонованих звалищ. У Харкові запустили додаток, де кожен може позначити на карті сміттєзвалище — і служби прибирають його за 72 години. У Вінниці працює система «Пластик за квиток»: здаєш пляшку — отримуєш безкоштовну поїздку. Це не ідеально, але це рух. І рух — це вже половина перемоги.</p>
+
+            <div class="section-title">Що можете зробити сьогодні</div>
+
+            <ul class="action-list">
+                <li>Возьміть багаторазовий пакет у супермаркет</li>
+                <li>Відмовтеся від пластикового стала для кави</li>
+                <li>Підпишіть петицію за збереження місцевого парку</li>
+                <li>Встановіть додаток для моніторингу сміттєзвалищ</li>
+                <li>Почніть сортувати відходи вдома</li>
+            </ul>
+
+            <p>Екологія не вимагає героїзму — вона вимагає звички. А звички формують майбутнє.</p>
+        </div>
+    </div>
+</body>
+</html>
